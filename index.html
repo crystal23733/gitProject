@@ -11,6 +11,15 @@
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut commodi cumque numquam, magni similique doloremque fugiat enim soluta quam neque voluptas iure dignissimos voluptatibus atque iste amet nemo expedita nisi.</p>
 </body>
 <script>
-  
+  const h2 = document.querySelector('h2');
+  h2.addEventListener('click', () => {
+    if(h2.style.color === ''){
+      h2.style.color = 'white';
+      h2.style.backgroundColor = 'black';
+    } else {
+      h2.style.color = '';
+      h2.style.backgroundColor = '';
+    }
+  })
 </script>
 </html>
